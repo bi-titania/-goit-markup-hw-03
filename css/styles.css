@@ -356,11 +356,8 @@ footer {
   justify-content: center;
   box-sizing: border-box;
   max-width: 370px;
-  max-height: 404px;
   margin-right: 30px;
 }
-/* calc ((100% - 60px) / 3 */
-
 .pr-item:nth-child(-n + 6) {
   margin-bottom: 30px;
 }
