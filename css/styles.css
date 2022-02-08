@@ -355,7 +355,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
-  max-width: 370px;
+  max-width: calc ((100% - 60px) / 3);
   margin-right: 30px;
 }
 .pr-item:nth-child(-n + 6) {
