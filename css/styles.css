@@ -202,6 +202,9 @@ header {
 .work-list {
   display: flex;
 }
+.work-list img {
+  display: block;
+}
 .work-list li:not(:last-child) {
   margin-right: 30px;
 }
