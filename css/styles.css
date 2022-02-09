@@ -66,7 +66,7 @@ header {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--main-color);
-  padding-right: 90px;
+  margin-right: 95px;
 }
 .logo-item {
   color: var(--accent-color);
@@ -77,9 +77,11 @@ header {
 .nav {
   display: flex;
 }
+.nav li:not(:last-child) {
+  margin-right: 50px;
+}
 .nav-link {
   color: var(--main-color);
-  margin: 20px;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -92,7 +94,7 @@ header {
 }
 .contact-list {
   display: flex;
-  padding-left: 300px;
+  margin-left: 330px;
 }
 .contact-list li:not(:last-child) {
   margin-right: 50px;
@@ -109,11 +111,10 @@ header {
 /* ---------- Заголовок ---------- */
 
 .hero {
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  text-align: center;
   height: 600px;
   background-color: var(--background);
 }
@@ -174,7 +175,7 @@ header {
 
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .skills-list p {
   font-size: 14px;
@@ -182,8 +183,8 @@ header {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
-.skills-list li:not(:first-child) {
-  padding-left: 35px;
+.skills-list li:not(:last-child) {
+  margin-right: 35px;
 }
 /* ---------- Виды деятельности ---------- */
 
@@ -196,7 +197,7 @@ header {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .work-list {
   display: flex;
@@ -217,7 +218,7 @@ header {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .team-list {
   display: flex;
@@ -227,19 +228,18 @@ header {
 }
 .team-card {
   width: 270px;
-  height: 368px;
+  height: 370px;
   background-color: var(--title-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 0px 0px 4px 4px;
 }
 .team-card h3 {
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 8px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 .team-card p {
   font-size: 16px;
@@ -247,6 +247,9 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+.team-text {
+  padding: 30px 0;
 }
 
 /* ---------- Подвал страницы ---------- */
@@ -276,7 +279,10 @@ footer {
   text-align: center;
 }
 .li-address {
-  padding-top: 20px;
+  margin-top: 15px;
+}
+.li-contact {
+  margin-top: 3px;
 }
 .address-link:hover {
   color: var(--accent-color);
@@ -316,7 +322,7 @@ footer {
 .button-menu {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .button-menu li {
   margin-right: 10px;
@@ -376,6 +382,7 @@ footer {
   display: block;
 }
 .pr-text {
+  padding: 20px 0 20px 25px;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -387,8 +394,6 @@ footer {
   letter-spacing: 0.06em;
   text-align: left;
   color: var(--main-color);
-  padding-left: 20px;
-  padding-top: 20px;
 }
 .pr-desc {
   font-size: 16px;
@@ -396,6 +401,4 @@ footer {
   letter-spacing: 0.03em;
   text-align: left;
   color: var(--text-color);
-  padding-left: 20px;
-  margin-bottom: 20px;
 }
